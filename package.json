@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx drizzle-kit push --force && next build",
+    "build": "DATABASE_URL=$DATABASE_URL_UNPOOLED npx drizzle-kit push --force && next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
